@@ -14,7 +14,7 @@ const Layout = ({ children }: DashboardLayoutProps) => {
       </Head>
 
       <main className="
-        min-h-screen min-w-fit flex justify-center items-center
+        min-h-screen min-w-screen flex justify-center items-center
         bg-gradient-to-br from-neutral via-neutral to-neutral
       ">
         { children }

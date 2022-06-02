@@ -3,7 +3,7 @@ import { LandingCard, LandingHeader, WrappingLink } from '../components/landing'
 
 const Home: NextPage = () => {
   return (
-    <div className="w-2/5">
+    <div className="max-w-max sm:w-2/5">
       <LandingHeader content="TBSmith" />
       <div className="divider"/>
       <div className="display flex flex-wrap justify-center items-center">
