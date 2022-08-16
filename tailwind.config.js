@@ -18,18 +18,22 @@ module.exports = {
       // }
       colors: {
         success: '#3a347f',
-        primaryLight: '#9a77d0',
-        primary: '#09015F',
-        primaryDark: '#07014c',
-        secondaryLight: '#bf3387',
-        secondary: '#AF0069',
-        secondaryDark: '#8c0054',
-        tertiaryLight: '#77c2c1',
-        tertiary: '#55B3B1',
-        tertiaryDark: '#448f8e',
-        quaternaryLight: '#f8cd84',
-        quaternary: '#F6C065',
-        quaternaryDark: '#c59a51'
+        // Jet black
+        primaryLight: '#000401',
+        primary: '#000401',
+        primaryDark: '#000401',
+        // Gunmetal Gray
+        secondaryLight: '#4E545C',
+        secondary: '#4E545C',
+        secondaryDark: '#4E545C',
+        // Pewter
+        tertiaryLight: '#8D9797',
+        tertiary: '#8D9797',
+        tertiaryDark: '#8D9797',
+        // White
+        quaternaryLight: '#E5E8E8',
+        quaternary: '#E5E8E8',
+        quaternaryDark: '#E5E8E8'
       }
     },
   },

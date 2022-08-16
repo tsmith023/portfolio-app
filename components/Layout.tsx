@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from './Navbar'
 
 type DashboardLayoutProps = {
   children: React.ReactNode,
@@ -13,11 +14,15 @@ const Layout = ({ children }: DashboardLayoutProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="
-        min-h-screen min-w-screen flex justify-center items-center
-        bg-gradient-to-br from-neutral via-neutral to-neutral
-      ">
-        { children }
+      <main className="bg-primaryLight h-screen">
+        <div className="container mx-auto rounded-2xl h-full text-primary-content">
+          <div className="h-18">
+            <Navbar />
+          </div>
+          <div className="h-[calc(100%-64px)] m-auto">
+            { children }
+          </div>
+        </div>
       </main>
     </>
   )
