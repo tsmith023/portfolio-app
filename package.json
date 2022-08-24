@@ -18,7 +18,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-is": "^17.0.2",
-    "react-transition-group": "^4.3.0"
+    "react-transition-group": "^4.3.0",
+    "react-swipeable": "latest"
   },
   "devDependencies": {
     "@types/react": "^18",

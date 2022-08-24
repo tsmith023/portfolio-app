@@ -1,31 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Transition } from '@headlessui/react'
+import Stanza from '../components/landing/Stanza'
 
-interface StackedCardProps {
-  visible: boolean,
-  // onClick: React.MouseEventHandler<HTMLDivElement>,
-  text: string
-}
-
-const StackedCard: React.FC<StackedCardProps> = (props: StackedCardProps): React.ReactElement => {
-  const onClick = () => {
-    window.open("https://glaemscrafu.jrrvf.com")
-  }
-  return (
-    <div
-      className={`
-        card w-192 h-20 bg-primary py-10
-        cursor-pointer btn btn-primary
-        text-center text-2xl
-      `}
-      onClick={onClick}
-    >
-      <div className={`
-        card-body normal-case
-      `}>{ props.text }</div>
-    </div>
-  )
-}
 
 export default function Home(): React.ReactElement {
   const texts = [
@@ -82,7 +58,7 @@ export default function Home(): React.ReactElement {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <StackedCard text={texts[whichStack]} visible={isShowing} />
+          <Stanza text={texts[whichStack]} visible={isShowing} />
         </Transition>
       </div>
     </div>

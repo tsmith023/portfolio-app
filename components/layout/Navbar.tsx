@@ -15,11 +15,11 @@ interface NavbarLinkProps {
   to: string
 }
 
-const NavbarLink = ({ icon, tip, to }) => {
+const NavbarLink = (props: NavbarLinkProps) => {
 return (
-    <a href={to} target="_blank"  className="btn btn-ghost normal-case text-xl">
-      <div className="tooltip tooltip-bottom" data-tip={tip}>
-        <FontAwesomeIcon icon={icon} />
+    <a href={props.to} target="_blank"  className="btn btn-ghost normal-case text-xl">
+      <div className="tooltip tooltip-bottom" data-tip={props.tip}>
+        <FontAwesomeIcon icon={props.icon} />
       </div>
     </a>
   )
@@ -51,9 +51,10 @@ const Navbar = () => {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
           </label>
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box">
-            <li key="1"><Link href="/">Homepage</Link></li>
-            <li key="2"><Link href="/portfolio">Portfolio</Link></li>
-            <li key="3"><Link href="/about">About</Link></li>
+            <li key="1"><Link href="/">Landing</Link></li>
+            <li key="2"><Link href="/about">About</Link></li>
+            <li key="3"><Link href="/portfolio">Portfolio</Link></li>
+            <li key="4"><Link href="/interests">Interests</Link></li>
           </ul>
         </div>
       </div>

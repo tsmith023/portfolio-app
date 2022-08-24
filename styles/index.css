@@ -5,3 +5,7 @@
 .w-192 {
   width: 768px;
 }
+
+.hero-background {
+  background-image: url('https://placeimg.com/1000/800/arch')
+}

@@ -7,4 +7,7 @@ module.exports = {
     // !! WARN !!
     ignoreBuildErrors: false,
   },
+  images: {
+    domains: ['placeimg.com'],
+  },
 };
