@@ -34,7 +34,11 @@ module.exports = {
         quaternaryLight: '#E5E8E8',
         quaternary: '#E5E8E8',
         quaternaryDark: '#E5E8E8'
-      }
+      },
+      fontFamily: {
+        sans: "Montserrat",
+        serif: "Montserrat"
+      },
     },
   },
   screens: {

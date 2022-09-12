@@ -1,47 +1,35 @@
 import React from 'react'
-// import { useSwipeable } from "react-swipeable";
-import Hero from './Hero'
-
-const NEXT = "NEXT"
-const PREV = "PREV"
+import { HeroSideground } from './Hero'
+import physics1Gif from '../../assets/gifs/physics1.gif'
+import physics2Gif from '../../assets/gifs/physics2.gif'
+import physics3Gif from '../../assets/gifs/physics3.gif'
 
 const SLIDES = [
   {
-    body: "I love coding",
-    iconSrc: "https://placeimg.com/260/400/arch",
-    title: "Coding",
+    body: "First-principles thinking is the nucleus of comprehensive general solutions",
+    icon: physics1Gif,
+    title: "Solving Problems",
   },
   {
-    body: "body2",
-    iconSrc: "https://placeimg.com/260/410/arch",
-    title: "I love physics",
+    body: "Knowledge-mining is a direct outcome of seeking general solutions",
+    icon: physics2Gif,
+    title: "Discovering Truths",
   },
   {
-    body: "body2",
-    iconSrc: "https://placeimg.com/260/410/arch",
-    title: "I love Tolkein",
-  },
-  {
-    body: "",
-    iconSrc: "https://placeimg.com/260/410/arch",
-    title: "In that order!",
+    body: "Ambition and curiosity lead to the expansion of knowledge boundaries",
+    icon: physics3Gif,
+    title: "Broadening Horizons",
   },
 ]
 
-const initialState = { pos: 0, sliding: false, dir: NEXT };
-
-interface CarouselProps {
-  // children: React.ReactElement,
-}
-
-const Carousel = (props: CarouselProps) => {
+const Carousel = () => {
   const renderCarousels = () => {
     return SLIDES.map((slide, idx) => {
       return (
-        <div id={`item${idx}`} className="carousel-item w-full">
-          <Hero
+        <div key={idx} id={`item${idx}`} className="carousel-item w-full">
+          <HeroSideground
             body={slide.body}
-            iconSrc={slide.iconSrc}
+            icon={slide.icon}
             title={slide.title}
           />
         </div>

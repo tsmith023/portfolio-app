@@ -14,12 +14,12 @@ const Layout = ({ children }: DashboardLayoutProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-primaryLight h-screen">
+      <main className="bg-primaryLight h-screen w-screen font-sans">
         <div className="container mx-auto rounded-2xl h-full text-primary-content">
           <div className="h-18">
             <Navbar />
           </div>
-          <div className="h-[calc(100%-64px)] m-auto">
+          <div className="h-[calc(100%-64px)] m-auto w-full">
             { children }
           </div>
         </div>

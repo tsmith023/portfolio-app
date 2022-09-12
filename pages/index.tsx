@@ -1,46 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
+import Image from 'next/image'
 import { Transition } from '@headlessui/react'
 import Stanza from '../components/landing/Stanza'
 
-
 export default function Home(): React.ReactElement {
-  const texts = [
+  const [ isShowing, setIsShowing ] = useState(true)
+  const [ whichLine, setWhichLine ] = useState(0)
+
+  const lines = [
     "The desire of my spirit urges me to journey forth",
     "over the flowing sea, that far hence",
     "across the hills of water and the whale's country",
     "I may seek the land of strangers"
   ]
-
-  const [ isShowing, setIsShowing ] = useState(true)
-  const [ whichStack, setWhichStack ] = useState(0)
-  // const [ selectedStack, setSelectedStack ] = useState(defaultStacks[0])
-  // const [ stacks, setStacks ] = useState(defaultStacks)
-
   const fadeTime = 200
-
-  const onFadeOut = () => {
-    setIsShowing(false)
-  }
-
-  const onFadeIn = () => {
-    setIsShowing(true)
-  }
 
   const onChange = () => {
     // Begin fade out transition
     setIsShowing(false)
     // Calculate new stack to choose from
-    const newStackNumber = whichStack + 1 === texts.length ? 0 : whichStack + 1
+    const newLineNumber = whichLine + 1 === lines.length ? 0 : whichLine + 1
     // Trigger function to execute after fadeTime to change stack and fade back in
     setTimeout(() => {
-      setWhichStack(newStackNumber)
+      setWhichLine(newLineNumber)
       setIsShowing(true)
     }, fadeTime)
   }
 
   useEffect(() => {
     // Setup time between Stack Fades to trigger on each fade-out-and-in
-    const waitTime = 6000
+    const waitTime = 5000
     const change = setInterval(() => onChange(), waitTime)
     return () => clearInterval(change)
   }, [onChange])
@@ -58,7 +47,7 @@ export default function Home(): React.ReactElement {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Stanza text={texts[whichStack]} visible={isShowing} />
+          <Stanza text={lines[whichLine]} visible={isShowing} />
         </Transition>
       </div>
     </div>
