@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import Image from 'next/image'
 import { Transition } from '@headlessui/react'
 import Stanza from '../components/landing/Stanza'
 

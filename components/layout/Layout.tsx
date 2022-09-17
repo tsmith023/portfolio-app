@@ -1,11 +1,19 @@
 import Head from 'next/head'
-import Navbar from './Navbar'
+import { useEffect, useState } from 'react'
+
+import Navbar from './navbar'
 
 type DashboardLayoutProps = {
   children: React.ReactNode,
 }
 
 const Layout = ({ children }: DashboardLayoutProps) => {
+  const [ mounted, setMounted ] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   return (
     <>
       <Head>
@@ -17,7 +25,7 @@ const Layout = ({ children }: DashboardLayoutProps) => {
       <main className="bg-primaryLight h-screen w-screen font-sans">
         <div className="container mx-auto rounded-2xl h-full text-primary-content">
           <div className="h-18">
-            <Navbar />
+            { mounted ? <Navbar /> : <div className="navbar"></div> }
           </div>
           <div className="h-[calc(100%-64px)] m-auto w-full">
             { children }

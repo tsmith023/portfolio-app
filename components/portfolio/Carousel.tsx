@@ -171,7 +171,7 @@ const Carousel = () => {
       {
         cards.map((card, idx) => {
           return (
-            <div className="carousel-item w-full h-full">
+            <div key={idx} className="carousel-item w-full h-full">
               <div className="w-full h-full">
                 <Card
                   key={idx}

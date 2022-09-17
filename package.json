@@ -18,6 +18,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-is": "^17.0.2",
+    "react-responsive": "^9.0.0",
     "react-swipeable": "latest",
     "react-transition-group": "^4.3.0"
   },
