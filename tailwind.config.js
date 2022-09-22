@@ -50,7 +50,7 @@ module.exports = {
     xxl: { min: '1359px' } // Desktop widescreen.
   },
   plugins: [
-    // require("@tailwindcss/typography"),
+    require("@tailwindcss/typography"),
     require("daisyui")
   ],
 }

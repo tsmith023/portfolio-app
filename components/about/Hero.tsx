@@ -32,12 +32,11 @@ export const HeroBackground = (props: HeroProps) => {
 }
 
 export const HeroSideground = (props: HeroProps) => {
-  console.log(props.isReverse)
   return (
     <div className="hero">
-      <div className={`hero-content flex-col  ${props.isReverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
+      <div className={`hero-content w-screen md:w-full flex-col  ${props.isReverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
         <Image
-          className="rounded-3xl max-w-sm"
+          className="rounded-3xl"
           src={props.icon}
           alt="gif"
           layout='intrinsic'
@@ -45,9 +44,9 @@ export const HeroSideground = (props: HeroProps) => {
           // unoptimized={true}
           // height="100%"
         />
-        <div className="text-center w-1/2 px-28">
-          <h1 className="mb-5 text-4xl font-bold">{props.title}</h1>
-          <p className="mb-5 text-lg">{props.body}</p>
+        <div className="text-center lg:w-1/2 px-0 sm:px-28">
+          <h1 className="mb-3 sm:mb-5 text-3xl md:text-4xl font-bold">{props.title}</h1>
+          <p className="mb-0 sm:mb-5 text-md md:text-lg">{props.body}</p>
         </div>
       </div>
     </div>

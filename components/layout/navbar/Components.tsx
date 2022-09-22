@@ -56,8 +56,6 @@ export const extNavbarLinks = [
   },
 ]
 
-console.log(process.env)
-
 export const NavbarInternalLink = (props: NavbarLinkProps) => {
   return (
     <div className="btn btn-ghost normal-case text-2xl">
@@ -116,7 +114,6 @@ export const DropdownMenu = () => {
 }
 
 export const Header = () => {
-  console.log(process.env)
   return (
     <>
       <div className="btn btn-ghost normal-case text-2xl">
