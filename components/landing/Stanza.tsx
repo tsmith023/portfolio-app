@@ -11,14 +11,14 @@ const Stanza: React.FC<StackedCardProps> = (props: StackedCardProps): React.Reac
   return (
     <div
       className={`
-        card w-192 h-20 bg-primary py-10
+        card w-8/12 h-1/4 bg-primary
         cursor-pointer btn btn-primary
-        text-center text-2xl
+        text-center text-2xl m-auto
       `}
       onClick={onClick}
     >
       <div className={`
-        card-body normal-case
+        card-body normal-case p-12
       `}>{ props.text }</div>
     </div>
   )

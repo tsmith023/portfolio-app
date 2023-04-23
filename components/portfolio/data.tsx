@@ -1,55 +1,12 @@
 import { TechProps } from './types'
-import atIcon from '../../assets/images/atcounselling.png'
-import bpIcon from '../../assets/images/brainpool.png'
-import cfIcon from '../../assets/images/carbonfixers.png'
-import sxIcon from '../../assets/images/stox.png'
-import sgIcon from '../../assets/images/strawberry-gql.png'
+import atImg from '../../public/images/atcounselling.png'
+import bpImg from '../../public/images/brainpool.png'
+import cfImg from '../../public/images/carbonfixers.png'
+import gaImg from '../../public/images/gospel.png'
+import sxImg from '../../public/images/stox.png'
+import sgImg from '../../public/images/strawberry-gql.png'
 
 export const cards = [
-  {
-    body: ' \
-      Become an investing expert by actively managing your portfolio through actionable insights generated from data-driven calculations and recommendations.\n \
-      Understand the holdings in your portfolio at the granular level through traditional statistical methods and discover your own investment style through \
-      AI recommendation strategies based on your fundamental personality. \
-    ',
-    img: sxIcon,
-    techs: new Array<TechProps>(
-      {
-        name: 'React',
-        url: 'https://reactjs.org'
-      },
-      {
-        name: 'Apollo-GQL',
-        url: 'https://www.apollographql.com'
-      },
-      {
-        name: 'Strawberry-GQL', 
-        url: 'https://strawberry.rocks'
-      },
-      {
-        name: 'FastAPI',
-        url: 'https://fastapi.tiangolo.com'
-      },
-      {
-        name: 'MongoDB',
-        url: 'https://mongodb.com'
-      },
-      {
-        name: 'Go',
-        url: 'https://go.dev'
-      }
-    ),
-    title: 'StoX',
-    subtitle: 'An investment portfolio management SaaS platform',
-    url: 'https://mystox.io',
-    whoWith: {
-      title: 'Freelance',
-      body: `
-        This personal project developed out of the use of complex spreadsheets for active portfolio management.
-        I work on it in my free-time when I can with the co-founder and fellow developers.
-      `,
-    },
-  },
   {
     body: ' \
       Brainpool AI is a consultancy firm specialising in value-add for all sizes of \
@@ -58,7 +15,9 @@ export const cards = [
       we also develop solutions ourselves and I have been lucky to work on recommendation systems, sentiment analysers, \
       and demand forecasters. \
     ',
-    img: bpIcon,
+    imgs: [
+      bpImg,
+    ],
     techs: new Array<TechProps>(
       {
         name: 'Docker',
@@ -98,7 +57,9 @@ export const cards = [
       Using our expert-curated catalogue of ready-built building assemblies, model the carbon emissions of your early-stage architectural designs at a high-level to \
       avoid the pitfalls of committing to polluting concrete & steel before any lifecycle analysis has been conducted. \
     ',
-    img: cfIcon,
+    imgs: [
+      cfImg,
+    ],
     techs: new Array<TechProps>(
       {
         name: 'React',
@@ -142,7 +103,7 @@ export const cards = [
       There exists Ariadne, which is an async schema-first library, and Graphene, which is a sync code-first library with a strong Django integration. \n \
       Strawberry, on the other hand, is an async code-first library that aims to supply GraphQL functionality to APIs deployed as microservices.  \
     ",
-    img: sgIcon,
+    imgs: [sgImg],
     techs: new Array<TechProps>(
       {
         name: 'Poetry',
@@ -164,29 +125,113 @@ export const cards = [
       ',
     }
   },
-  // {
-  //   body: 'Remote Psychotherapy Services',
-  //   img: atIcon,
-  //   techs: new Array<TechProps>(
-  //     {
-  //       name: 'Next',
-  //       url: 'https://nextjs.org'
-  //     },
-  //     {
-  //       name: 'Tailwind',
-  //       url: 'https://tailwindcss.com'
-  //     },
-  //     {
-  //       name: 'Daisy UI',
-  //       url: 'https://daisyui.com'
-  //     },
-  //   ),
-  //   title: 'AT Counselling Services',
-  //   subtitle: 'A portfolio website for professional therapy services',
-  //   url: 'https://atcounselling.services',
-  //   whoWith: {
-  //     title: 'Freelance',
-  //     body: '',
-  //   }
-  // },
+  {
+    body: `\
+      A multi-page website for reading from different Bible translations provided by API.Bible. \
+      The website also features a chatbot powered by OpenAI's GPT3.5 model with a customised prompt \
+      for returning Biblically relevant theological answers.
+    `,
+    imgs: [atImg],
+    techs: new Array<TechProps>(
+      {
+        name: 'Next',
+        url: 'https://nextjs.org'
+      },
+      {
+        name: 'Tailwind',
+        url: 'https://tailwindcss.com'
+      },
+      {
+        name: 'Daisy UI',
+        url: 'https://daisyui.com'
+      },
+      {
+        name: 'OpenAI Chat API',
+        url: 'https://platform.openai.com/docs/guides/chat'
+      }
+    ),
+    title: 'The Gospel @ AI',
+    subtitle: 'A website for reading the Bible and chatting with GPT3.5',
+    url: 'https://thegospel.ai',
+    whoWith: {
+      title: 'Freelance',
+      body: '',
+    }
+  },
+  {
+    body: `\
+      A multi-page website for advertising counselling and therapy services in Greater Manchester and Cheshire. \
+      Enquiries are handled through a Vercel serverless function that sends an email from the client to the therapist.
+    `,
+    imgs: [gaImg],
+    techs: new Array<TechProps>(
+      {
+        name: 'Next',
+        url: 'https://nextjs.org'
+      },
+      {
+        name: 'Tailwind',
+        url: 'https://tailwindcss.com'
+      },
+      {
+        name: 'Daisy UI',
+        url: 'https://daisyui.com'
+      },
+    ),
+    title: 'AT Counselling Services',
+    subtitle: 'A portfolio website for professional therapy services',
+    url: 'https://atcounselling.services',
+    whoWith: {
+      title: 'Freelance',
+      body: '',
+    }
+  },
+  {
+    body: ' \
+      Become an investing expert by actively managing your portfolio through actionable insights generated from data-driven calculations and recommendations.\n \
+      Understand the holdings in your portfolio at the granular level through traditional statistical methods and discover your own investment style through \
+      AI recommendation strategies based on your fundamental personality. \
+    ',
+    imgs: [
+      sxImg,
+    ],
+    techs: new Array<TechProps>(
+      {
+        name: 'React',
+        url: 'https://reactjs.org'
+      },
+      {
+        name: 'Apollo-GQL',
+        url: 'https://www.apollographql.com'
+      },
+      {
+        name: 'Strawberry-GQL', 
+        url: 'https://strawberry.rocks'
+      },
+      {
+        name: 'FastAPI',
+        url: 'https://fastapi.tiangolo.com'
+      },
+      {
+        name: 'MongoDB',
+        url: 'https://mongodb.com'
+      },
+      {
+        name: 'Go',
+        url: 'https://go.dev'
+      }
+    ),
+    title: 'StoX',
+    subtitle: 'An investment portfolio management SaaS platform',
+    url: 'https://mystox.io',
+    whoWith: {
+      title: 'Freelance',
+      body: `
+        This personal project developed out of the use of complex spreadsheets for active portfolio management.
+        I worked on it in my free-time when I can with the co-founder and fellow developers but it has been mothballed
+        as our focused moved elsewhere.
+      `,
+    },
+    mothballed: true,
+  }
 ]

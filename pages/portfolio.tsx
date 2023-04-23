@@ -1,10 +1,10 @@
 import React from 'react'
-import Carousel from '../components/portfolio/Carousel'
+import CardCarousel from '../components/portfolio/CardCarousel'
 
-const Portfolio = () => {
+function Portfolio() {
   return (
     <div className="h-full w-full flex">
-      <Carousel />
+      <CardCarousel />
     </div>
   )
 }

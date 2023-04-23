@@ -34,7 +34,7 @@ export default function Home(): React.ReactElement {
   }, [onChange])
   
   return (
-    <div className="h-full flex">
+    <div className="h-children flex">
       <div className="m-auto">
         <Transition
           show={isShowing}

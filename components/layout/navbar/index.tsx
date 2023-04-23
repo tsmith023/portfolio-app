@@ -5,11 +5,11 @@ import DesktopNavbar from './Desktop'
 import MobileNavbar from './Mobile'
 
 const Navbar = () => {
-  const isDesktopOrLaptop = useMediaQuery({
+  const isDesktop = useMediaQuery({
     query: '(min-width: 1224px)'
   })
 
-  return isDesktopOrLaptop ?
+  return isDesktop ?
     <DesktopNavbar /> :
     <MobileNavbar />
 }

@@ -11,3 +11,11 @@
 .hero-background {
   background-image: url('https://placeimg.com/1000/800/arch')
 }
+
+.h-navbar {
+  height: theme('spacing.16')
+}
+
+.h-children {
+  min-height: calc(100vh - theme('spacing.16'))
+}

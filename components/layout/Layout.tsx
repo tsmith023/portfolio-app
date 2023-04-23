@@ -7,7 +7,7 @@ type DashboardLayoutProps = {
   children: React.ReactNode,
 }
 
-const Layout = ({ children }: DashboardLayoutProps) => {
+const Layout = (props: DashboardLayoutProps) => {
   const [ mounted, setMounted ] = useState(false)
 
   useEffect(() => {
@@ -21,17 +21,16 @@ const Layout = ({ children }: DashboardLayoutProps) => {
         <meta name="description" content="The personal portfolio website of Tommy Smith" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="bg-primaryLight h-screen w-screen font-sans">
-        <div className="container mx-auto rounded-2xl h-full text-primary-content">
-          <div className="h-18">
-            { mounted ? <Navbar /> : <div className="navbar"></div> }
+      <div className="font-sans bg-primary">
+        <nav className="container bg-secondary rounded-b-2xl md:rounded-2xl mx-auto text-primary-content">
+          { mounted ? <Navbar /> : <div className="navbar"></div> }
+        </nav>
+        <main className="container bg-primary mx-auto rounded-none md:rounded-2xl text-primary-content">
+          <div className="h-children m-auto w-full">
+            { props.children }
           </div>
-          <div className="h-[calc(100%-64px)] m-auto w-full">
-            { children }
-          </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </>
   )
 }

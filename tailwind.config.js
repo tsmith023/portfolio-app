@@ -20,19 +20,19 @@ module.exports = {
         success: '#3a347f',
         // Jet black
         primaryLight: '#000401',
-        primary: '#000401',
+        primary: '#0B0B10',
         primaryDark: '#000401',
         // Gunmetal Gray
         secondaryLight: '#4E545C',
-        secondary: '#4E545C',
+        secondary: '#212125',
         secondaryDark: '#4E545C',
         // Pewter
         tertiaryLight: '#8D9797',
-        tertiary: '#8D9797',
+        tertiary: '#484947',
         tertiaryDark: '#8D9797',
         // White
         quaternaryLight: '#E5E8E8',
-        quaternary: '#E5E8E8',
+        quaternary: '#CDC89C',
         quaternaryDark: '#E5E8E8'
       },
       fontFamily: {

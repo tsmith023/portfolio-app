@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 
+import ImageCarousel from './ImageCarousel'
 import { CardGlassProps } from './types'
 import { DescriptionPopup, TechsPopup, WhoWithPopup } from './components'
 
@@ -50,13 +50,8 @@ const CardGlass = (props: CardGlassProps) => {
   return (
     <div className="flex h-full w-full items-center justify-center">
       <div className="card card-compact md:card-normal glass h-3/4 lg:h-fit w-5/6">
-        <Image 
-          className="rounded-xl"
-          src={props.img}
-          alt="example-site"
-          layout='responsive'
-          quality={100}
-          unoptimized={true}
+        <ImageCarousel
+          images={props.imgs}
         />
         <div className="card-body">
           { renderDescription() }
@@ -67,7 +62,9 @@ const CardGlass = (props: CardGlassProps) => {
               whichModal={`whoWith-modal-${props.idx}`}
             />
             { renderTechs() }
-            <a href={props.url} target="_blank" className="btn btn-outline btn-primary">Check it out!</a>
+            <a href={props.mothballed ? "" : props.url} target="_blank" className={`btn btn-outline btn-primary ${props.mothballed && "btn-disabled"}`}>
+              { props.mothballed ? "Mothballed" : "Check it out!"}
+            </a>
           </div>
         </div>
       </div>

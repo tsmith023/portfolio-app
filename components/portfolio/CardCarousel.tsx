@@ -4,7 +4,7 @@ import { useSwipeable } from 'react-swipeable'
 import { cards } from './data'
 import Card from './Card'
 
-const Carousel = () => {
+const CardCarousel = () => {
   const [ slideNumber, setSlideNumber ] = useState(0)
 
   const cycleLeft = () => {
@@ -24,18 +24,19 @@ const Carousel = () => {
       {
         cards.map((card, idx) => {
           return (
-            <div key={idx} className="carousel-item w-full h-full">
-              <div className="w-full h-full">
+            <div key={idx} className="carousel-item w-full h-children">
+              <div className="w-full h-full my-auto">
                 <Card
                   key={idx}
                   idx={idx}
                   body={card.body}
-                  img={card.img}
+                  imgs={card.imgs}
                   subtitle={card.subtitle}
                   techs={card.techs}
                   title={card.title}
                   url={card.url}
                   whoWith={card.whoWith}
+                  mothballed={card.mothballed}
                 />
               </div>
             </div>
@@ -46,4 +47,4 @@ const Carousel = () => {
   )
 }
 
-export default Carousel
+export default CardCarousel

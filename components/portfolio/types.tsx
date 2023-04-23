@@ -13,12 +13,13 @@ export interface WhoWithProps {
 export interface CardGlassProps {
   body: string
   idx: number
-  img: StaticImageData
+  imgs: StaticImageData[]
   subtitle: string
   techs: TechProps[]
   title: string
   url: string
   whoWith: WhoWithProps
+  mothballed?: boolean
 }
 
 export interface TechsPopupProps {

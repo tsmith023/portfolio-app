@@ -1,8 +1,8 @@
 import React from 'react'
 import { HeroSideground } from './Hero'
-import physics1Gif from '../../assets/gifs/physics1.gif'
-import physics2Gif from '../../assets/gifs/physics2.gif'
-import physics3Gif from '../../assets/gifs/physics3.gif'
+import physics1Gif from '../../public/gifs/physics1.gif'
+import physics2Gif from '../../public/gifs/physics2.gif'
+import physics3Gif from '../../public/gifs/physics3.gif'
 
 const SLIDES = [
   {
@@ -40,7 +40,7 @@ const Carousel = () => {
   const renderButtons = () => {
     return SLIDES.map((_, idx) => {
       return (
-        <a href={`#item${idx}`} className="btn btn-xs">
+        <a key={idx} href={`#item${idx}`} className="btn btn-xs">
           { idx + 1 }
         </a>
       )
@@ -49,7 +49,7 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="carousel w-full">
+      <div className="carousel w-full h-full">
         { renderCarousels() }
       </div>
       <div className="flex justify-center w-full py-2 gap-2">

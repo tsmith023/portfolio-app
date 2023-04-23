@@ -1,18 +1,18 @@
 import { 
-  Header,
-  NavbarExternalLink,
-  NavbarInternalLink,
+  HeaderDesktop,
+  NavbarExternalLinkDesktop,
+  NavbarInternalLinkDesktop,
   intNavbarLinks,
   extNavbarLinks,
-} from "./Components"
+} from "components/layout/navbar/Components"
 
 const DesktopNavbar = () => {
   return (
-    <div className="navbar bg-primaryDark text-primary-content rounded-2xl">
+    <div className="navbar text-primary-content rounded-2xl">
       <div className="navbar-start">
         { 
           intNavbarLinks.map((link, idx) => (
-            <NavbarInternalLink
+            <NavbarInternalLinkDesktop
               key={idx}
               icon={link.icon}
               tip={link.tip}
@@ -22,12 +22,12 @@ const DesktopNavbar = () => {
         }
       </div>
       <div className="navbar-center">
-        <Header />
+        <HeaderDesktop />
       </div>
       <div className="navbar-end">
         { 
           extNavbarLinks.map((link, idx) => (
-            <NavbarExternalLink
+            <NavbarExternalLinkDesktop
               key={idx}
               icon={link.icon}
               tip={link.tip}

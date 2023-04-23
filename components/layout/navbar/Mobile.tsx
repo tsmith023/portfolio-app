@@ -1,16 +1,20 @@
 import {
   DropdownMenu,
-  Header
-} from './Components'
+  HeaderMobile,
+  ResumeButton
+} from 'components/layout/navbar/Components'
 
 const MobileNavbar = () => {
   return (
-    <div className="navbar bg-primaryDark text-primary-content rounded-2xl">
+    <div className="navbar text-primary-content">
       <div className="navbar-start">
         <DropdownMenu />
       </div>
       <div className="navbar-center">
-        <Header />
+        <HeaderMobile />
+      </div>
+      <div className="navbar-end">
+        <ResumeButton />
       </div>
     </div>
   )
