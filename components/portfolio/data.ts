@@ -131,7 +131,7 @@ export const cards = [
       The website also features a chatbot powered by OpenAI's GPT3.5 model with a customised prompt \
       for returning Biblically relevant theological answers.
     `,
-    imgs: [atImg],
+    imgs: [gaImg],
     techs: new Array<TechProps>(
       {
         name: 'Next',
@@ -163,7 +163,7 @@ export const cards = [
       A multi-page website for advertising counselling and therapy services in Greater Manchester and Cheshire. \
       Enquiries are handled through a Vercel serverless function that sends an email from the client to the therapist.
     `,
-    imgs: [gaImg],
+    imgs: [atImg],
     techs: new Array<TechProps>(
       {
         name: 'Next',
