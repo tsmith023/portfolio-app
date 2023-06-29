@@ -1,7 +1,7 @@
 import React from 'react'
 import CardCarousel from '../components/portfolio/CardCarousel'
 
-function Portfolio() {
+const What = () => {
   return (
     <div className="h-full w-full flex">
       <CardCarousel />
@@ -9,4 +9,4 @@ function Portfolio() {
   )
 }
 
-export default Portfolio
+export default What

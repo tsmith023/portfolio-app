@@ -24,13 +24,18 @@ interface NavbarLinkProps {
 export const intNavbarLinks = [
   {
     icon: faSeedling,
-    tip: "About",
-    to: "/about"
+    tip: "Who",
+    to: "/who"
+  },
+  {
+    icon: faFlask,
+    tip: "What",
+    to: "/what"
   },
   {
     icon: faRocket,
-    tip: "Portfolio",
-    to: "/portfolio"
+    tip: "How",
+    to: "/how"
   },
   // {
   //   icon: faFlask,

@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from 'components/about/Carousel'
 
-const About = () => {
+const How = () => {
   return (
     <div className="h-children w-full flex">
       <div className="m-auto w-full">
@@ -11,4 +11,4 @@ const About = () => {
   )
 }
 
-export default About
+export default How
