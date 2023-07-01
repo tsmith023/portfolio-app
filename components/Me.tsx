@@ -2,7 +2,7 @@
 const Me = () => {
   return (
     <div className="flex justify-center">
-      <article className="prose">
+      <article className="prose mt-2 mx-4 sm:mt-0 sm:mx-0">
         <h1>Tommy Smith</h1>
         <p>
           I'm a software engineer at <a className="link" target="__blank" href="https://weaviate.io">Weaviate</a> trained as a physicist living in Manchester, UK.
