@@ -9,7 +9,7 @@ const Me = () => {
         </p>
         <p>
           My current interests surround <a className="link" target="__blank" href="https://en.wikipedia.org/wiki/Fourth_Industrial_Revolution">Industry 4.0</a> and
-          the imminent societal revolution brought about the advent of Artificial General Intelligence (AGI). Having read Azimov's Foundation series and Robot short stories
+          the imminent societal revolution brought about by the advent of Artificial General Intelligence (AGI). Having read Azimov's Foundation series and Robot short stories
           as a young adult, to find many of the core concepts and ideas of the books being realised in my lifetime is a dream come true!
         </p>
         <p>
