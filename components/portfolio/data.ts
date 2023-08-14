@@ -7,47 +7,75 @@ import sxImg from '../../public/images/stox.png'
 import sgImg from '../../public/images/strawberry-gql.png'
 
 export const cards = [
+  // {
+  //   body: ' \
+  //     Brainpool AI is a consultancy firm specialising in value-add for all sizes of \
+  //     companies seeking to increase productivity by automating time-consuming processes. \n \
+  //     As a consultancy, in the absence of in-house expertise, we leverage the pool to deliver on client requirements. However, \
+  //     we also develop solutions ourselves and I have been lucky to work on recommendation systems, sentiment analysers, \
+  //     and demand forecasters. \
+  //   ',
+  //   imgs: [
+  //     bpImg,
+  //   ],
+  //   techs: new Array<TechProps>(
+  //     {
+  //       name: 'Docker',
+  //       url: 'https://www.docker.com'
+  //     },
+  //     {
+  //       name: 'k8s',
+  //       url: 'https://kubernetes.io'
+  //     },
+  //     {
+  //       name: 'Knowledge Graphs', 
+  //       url: 'https://en.wikipedia.org/wiki/Knowledge_graph'
+  //     },
+  //     {
+  //       name: 'Sentiment Analysis',
+  //       url: 'https://en.wikipedia.org/wiki/Sentiment_analysis'
+  //     },
+  //     {
+  //       name: 'Demand Forecasting',
+  //       url: 'https://en.wikipedia.org/wiki/Demand_forecasting'
+  //     },
+  //   ),
+  //   title: 'Brainpool AI',
+  //   subtitle: 'A network of 500+ data scientists and AI experts',
+  //   url: 'https://brainpool.ai',
+  //   whoWith: {
+  //     title: 'Employed',
+  //     body: ' \
+  //       Working for Brainpool is my current primary employment. During my time in this role, I have developed my engineering skills \
+  //       by writing professional standard code while learning about the many different applications of ML and AI in industrial environments. \
+  //     ',
+  //   }
+  // },
   {
-    body: ' \
-      Brainpool AI is a consultancy firm specialising in value-add for all sizes of \
-      companies seeking to increase productivity by automating time-consuming processes. \n \
-      As a consultancy, in the absence of in-house expertise, we leverage the pool to deliver on client requirements. However, \
-      we also develop solutions ourselves and I have been lucky to work on recommendation systems, sentiment analysers, \
-      and demand forecasters. \
-    ',
-    imgs: [
-      bpImg,
-    ],
+    body: "\
+      With GraphQL's origins in Javascript, its development within other languages like Python remains in its infancy. \n \
+      There exists Ariadne, which is an async schema-first library, and Graphene, which is a sync code-first library with a strong Django integration. \n \
+      Strawberry, on the other hand, is an async code-first library that aims to supply GraphQL functionality to APIs deployed as microservices.  \
+    ",
+    imgs: [sgImg],
     techs: new Array<TechProps>(
       {
-        name: 'Docker',
-        url: 'https://www.docker.com'
+        name: 'Poetry',
+        url: 'https://python-poetry.org'
       },
       {
-        name: 'k8s',
-        url: 'https://kubernetes.io'
-      },
-      {
-        name: 'Knowledge Graphs', 
-        url: 'https://en.wikipedia.org/wiki/Knowledge_graph'
-      },
-      {
-        name: 'Sentiment Analysis',
-        url: 'https://en.wikipedia.org/wiki/Sentiment_analysis'
-      },
-      {
-        name: 'Demand Forecasting',
-        url: 'https://en.wikipedia.org/wiki/Demand_forecasting'
+        name: 'my[py]',
+        url: 'https://mypy.readthedocs.io/en/stable'
       },
     ),
-    title: 'Brainpool AI',
-    subtitle: 'A network of 500+ data scientists and AI experts',
-    url: 'https://brainpool.ai',
+    title: 'Strawberry-GraphQL',
+    subtitle: 'An open-source Python code-first GraphQL API technology',
+    url: 'https://strawberry.rocks',
     whoWith: {
-      title: 'Employed',
+      title: 'Contributor',
       body: ' \
-        Working for Brainpool is my current primary employment. During my time in this role, I have developed my engineering skills \
-        by writing professional standard code while learning about the many different applications of ML and AI in industrial environments. \
+        When I have the time, provided I also have the knowledge and ability, I help the project by responding to issues with bug fixes and feature requests. \
+        Through this, I further develop my collaborative skill and gain a deeper understanding of Gitflow through PR contributions. \
       ',
     }
   },
@@ -90,38 +118,10 @@ export const cards = [
     subtitle: 'A SaaS platform for cradle-to-gate carbon emissions estimation of early-stage architectural designs',
     url: 'https://carbonfixers.org',
     whoWith: {
-      title: 'Employed',
+      title: 'Brainpool',
       body: ' \
-        Working on this project has been a key part of my employment at Brainpool. I am involved in all aspects of the stack as one of \
-        two developers while managing the overal project as the senior member. My main contribution is the data aggregation pipeline, however. \
-      ',
-    }
-  },
-  {
-    body: "\
-      With GraphQL's origins in Javascript, its development within other languages like Python remains in its infancy. \n \
-      There exists Ariadne, which is an async schema-first library, and Graphene, which is a sync code-first library with a strong Django integration. \n \
-      Strawberry, on the other hand, is an async code-first library that aims to supply GraphQL functionality to APIs deployed as microservices.  \
-    ",
-    imgs: [sgImg],
-    techs: new Array<TechProps>(
-      {
-        name: 'Poetry',
-        url: 'https://python-poetry.org'
-      },
-      {
-        name: 'my[py]',
-        url: 'https://mypy.readthedocs.io/en/stable'
-      },
-    ),
-    title: 'Strawberry-GraphQL',
-    subtitle: 'An open-source Python code-first GraphQL API technology',
-    url: 'https://strawberry.rocks',
-    whoWith: {
-      title: 'Contributor',
-      body: ' \
-        When I have the time, provided I also have the knowledge and ability, I help the project by responding to issues with bug fixes and feature requests. \
-        Through this, I further develop my collaborative skill and gain a deeper understanding of Gitflow through PR contributions. \
+        Working on this project was a key part of my employment at Brainpool. I was involved in all aspects of the stack as one of \
+        two developers while managing the overal project as the senior member. My main contribution, however, was the data engine. \
       ',
     }
   },
@@ -151,11 +151,15 @@ export const cards = [
       }
     ),
     title: 'The Gospel @ AI',
-    subtitle: 'A website for reading the Bible and chatting with GPT3.5',
+    subtitle: 'A website for reading the Bible and chatting with a theological GPT4',
     url: 'https://thegospel.ai',
     whoWith: {
-      title: 'Freelance',
-      body: '',
+      title: 'Personal',
+      body: '\
+        I had the idea for this webapp as I like to read excerpts from the Bible some times but many Bible websites are not enjoyable to use. \
+        I also had an idea of using GPT3 years ago as an AI-gospel writer but the recent ChatGPT surge encouraged me to integrate a chat aspect. \
+      '
+      ,
     }
   },
   {
@@ -182,12 +186,15 @@ export const cards = [
     subtitle: 'A portfolio website for professional therapy services',
     url: 'https://atcounselling.services',
     whoWith: {
-      title: 'Freelance',
-      body: '',
+      title: 'Personal',
+      body: '\
+        This website was developed for my partner who is a professional counselling therapist. I developed it in my free-time and \
+        it was a great opportunity to learn about Next.js and Tailwind CSS. \
+      ',
     }
   },
   {
-    body: ' \
+    body: '\
       Become an investing expert by actively managing your portfolio through actionable insights generated from data-driven calculations and recommendations.\n \
       Understand the holdings in your portfolio at the granular level through traditional statistical methods and discover your own investment style through \
       AI recommendation strategies based on your fundamental personality. \
@@ -225,7 +232,7 @@ export const cards = [
     subtitle: 'An investment portfolio management SaaS platform',
     url: 'https://mystox.io',
     whoWith: {
-      title: 'Freelance',
+      title: 'Personal',
       body: `
         This personal project developed out of the use of complex spreadsheets for active portfolio management.
         I worked on it in my free-time when I can with the co-founder and fellow developers but it has been mothballed
